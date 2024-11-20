@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="#">contact</a>
+        <a href="#">about</a>
+        <a href="#">home</a>
+        <a href="#">blog</a>
+
+    </div>
+    <div class="content">
+        <h1>Hello world</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil vero quod placeat, molestias saepe earum
+            tempora perspiciatis consectetur, modi minus ea corporis aliquid illum iusto, quia non sapiente obcaecati
+            dolores.</p></br>
+            <button>Subscribe</button></br></br>
+        <form action="">
+            <p>Email: <input name="email">&nbsp; &emsp;
+                
+                Name:
+                <input type="text" class="name"></br></br>
+                Number:
+                <input type="number" class="name">
+                <input type="submit" id="submit" value="login">
+        </form>
+
+        <script>
+            const signup = document.querySelector("#submit");
+            const formvalue = document.querySelector("form");
+            const h1 = document.querySelector("h1");
+            const p = document.querySelector("p");
+            
+            let clickfun=function (e){
+                e.preventDefault();
+                formvalue.style.display = 'none';
+                p.style.display = 'none';
+                h1.innerHTML= "success"
+               
+            }
+
+            signup.addEventListener('click',clickfun)
+        </script>
+    </div></br>
+    <div class="footer">
+        <hr>This is my website
+    </div>
+
+</body>
+
+</html>
